@@ -1,0 +1,191 @@
+@Author=GEO#2936
+@Version=0.3.0
+! Thank you for choosing to translate Musiness Banager into your language!
+! Please do not change anything before the "="!
+! Additions in the labels list will be marked with "+ " before the label, but without the quotes. You can search the file for "+ " every update to find the new labels!
+! Deletions in the labels list will be marked with "- " before the label. PLEASE DELETE THE ENTIRE LINE. The deletions are left in to help you understand if something was replaced!
+! For lines that begin with "+ ", remove the "+ ".
+! Lines with a "!" or "+" or "@" at the beginnning mark the line as a comment and that line will be ignored.
+! The labels that contain "{x}" where x is a number, indicate an additional piece of text. Do not add or remove or change the numbers inside of them.
+! You may however, move them around. For example if a line is "Press {1} to open {2}", you can move them around in any way you want such as "To open {2} press {1}".
+! It has been added to make it easier for languages that read right to left instead of the usual left to right.
+! One more thing: the two characters "\n" represents a new line. In game, there will be a new line where "\n" is.
+
+BUNKER=Bunkra
+BUSINESS=Företag
+MCBUSINESS=MC Företag
+WAREHOUSE=varuhus
+NIGHTCLUB=Nattklubb
+NIGHTCLUBSAFE=Nattklubb Safe
+SPECIALCARGO=Speciallast
+SELLMISSION=Säljer uppdrag
+BUYMISSION=Köpuppdrag
+START=Start
+MONEY=Pengar
+STOCK=Stock
+SUPPLIES=Supplies
+CRATES=Crates
+PRODUCT=Produkt
+INFOOVERLAY=Info överlägg
+TERRORBYTE=Terror byte
+! STOCK, SUPPLIES, PRODUCT should all be what the game calls it, or something equivalent
+! You might want to leave TERRORBYTE the same, unless the game calls it something different
+
+HTTPGIVEUP=Misslyckades med att ansluta till servern.
+HTTPINVALID=Fick ogiltigt svar från servern. Detta kan bero på att Cloudflare eller antivirus blockerar länken. Ändra VPN eller ändra din anslutning.
+HTTPFAILSAFE=Aktiverar killswitch enligt failsafe.
+SCRIPTOUTOFDATE=Skriptet är föråldrat - vänligen uppdatera i arkivet.
+
+KILLSWITCH_SAFELOOP=Stoppar Nattklubbssäker AFK moneyloop enligt killswitch
+! This was edited to be more clear
+KILLSWITCH_SPECIALCARGO=Stoppar Special Cargo enligt killswitch
+KILLSWITCH_MAXSELLPRICE=Stoppar Max Säljpris enligt killswitch
+KILLSWITCH_AUTOCOMPLETE=Stoppar automatisk finish enligt killswitch
+
+TRANSACTIONSSTUCK_TOAST=Det verkar som att din transaktion har fastnat. Vänligen ändra session eller starta om spelet.
+BEALONE_TOAST=Det är för många människor i sessionen. Utlöser bealone
+
+PREFIX_SAFELOOP=[Safe Loop] {1}
+PREFIX_SPECIALCARGO=[Special Cargo] {1}
+PREFIX_TOTALEARNED=Total förtjänst: {1}
+PREFIX_MOTD=MOTD: {1}
+! {1} is a number, the amount of money earned in total.
+PREFIX={1} {2}
+! This can be '[x1] x2' where x1 is the prefix, and x2 is the message. This might go unused though..
+
+INFO_SCWAREHOUSE=SC Varohus {1}: {2}/{3}
+! {1} is slot {2} is amount {3} is capacity
+INFO_HUBBUSINESS=Hub {1}: {2}/{3}
+! {1} is name {2} is stock {3} is max capacity
+INFO_NCSAFE=Nattklubb Safe $: {1}
+! {1} is value
+INFO_MCBUSINESS=MC {1}: {2}% | {3}/{4}
+! {1} is name {2} is supplies {3} is product {4} is capacity
+INFO_BUNKER=Bunker: {1}% | {2}/{3}
+! {1} is supplies {2} is product {3} is capacity
+
+FINDSAFERWAYS=Hitta säkrare sätt att tjäna pengar
+FINDSAFERWAYS_DESC=Läs åtminstone detta innan du fortsätter med pengarmetoder.
+RETREIVINGINFO=Får information...
+
+SALESABUSE_DIVIDER=Försäljningsmissbruk
+
+MAXSELLPRICE=Max försäljningspris
+MAXSELLPRICE_DESC=Sälj din {1} för högsta pris oavsett hur mycket {2} du har
+! {1} and {2} are the same, and may be one of the following: [STOCK], [SUPPLIES], or [PRODUCT]
+
+MONITOR=Övervaka
+
+MONITOR_EXTRA=Övervaka {1}
+MONITOR_DESC=Visar mängden {1} ydu har i din {2}, med hjälp av {3}
+! {1} could be [STOCK], [SUPPLIES], [PRODUCT], or [MONEY] {2} could be [NIGHTCLUBSAFE], [BUSINESS], or [WAREHOUSE]. {3} is [INFOOVERLAY] for now, but could be changed in the future.
+
+BYPASSCOOLDOWN=Åsidosätt {1} Paus
+! {1} may be one of the following: [SELLMISSION], [BUYMISSION]
+BYPASSCOOLDOWN_DESC=Låter dig {1} en ny {2} utan att behöva vänta på paus
+! {1} is [START] for now, and {2} could be [SELLMISSION] or [BUYMISSION] for now.
+
+SETPRODUCT=Ställ in produkt
+SETPRODUCT_DESC=Ställ in hur mycket produkt du har direkt
+SETPRODUCT_TOAST=Produktuppsättning.
+
+MAXPRODUCTALL=Max produkt av Alt
+MAXPRODUCTALL_DESC=Ställer in alla produkter till max.
+MAXPRODUCTALL_TOAST=Alla produkter inställda på max.
+
+MAXPRODUCTIONSPEED=Max produktionshastighet
+MCMAXPRODUCTIONSPEED_DESC=Effekter omedelbart
+NCMAXPRODUCTIONSPEED_DESC=Effekter efter att en enhet har producerats
+MAXPRODUCTIONSPEED_TOAST=Produktionshastigheten är nu max.
+MAXPRODUCTIONSPEEDSLOW_TOAST=Produktionshastigheten är nu max. Effekter efter att en enhet har producerats.
+
+MAXIMUMCAPACITY=Maxkapacitet
+MAXIMUMCAPACITY_DESC=Ändrar hur mycket lager du kan hålla.
+MAXIMUMCAPACITY_TOAST=Kapaciteten tog slut.
+
+SUPPLYPRODUCTRATIO=Supply->Produktförhållande
+SUPPLYPRODUCTRATIO_DESC=Anger hur mycket resurser som behövs för att skapa en produkt. De lägre går snabbare.
+SUPPLYPRODUCTRATIO_TOAST=Förhållandet ändrat.
+
+RESUPPLY=Återförsörja
+RESUPPLY_DESC=Fyller på alla förnödenheter i ditt företag, gratis
+
+TRIGGERPRODUCTION=Utlösa produktion
+TRIGGERPRODUCTION_DESC=Startar produktionen omedelbart
+TRIGGERPRODUCTION_TOAST=Produktion utlöst.
+
+ENFORCEEASIESTMISSION=Tvinga enklaste försäljningsuppdrag
+ENFORCEEASIESTMISSION_DESC=Är det enklaste sättet att sälja uppdraget varje gång - om det slutförs för snabbt kan du inte få pengar?
+SPECIALCARGOLIST_DESC=OBS: maximalt säljvärde är 6 miljoner USD
+
+SPECIALCARGOWAREHOUSE_DESC=Välj vilket lager du vill ändra och modifiera, du kan ha max fem.
+SPECIALCARGOMONITOR_DESC=Visar hur mycket speciallast du har på ditt valda lager
+SPECIALCARGONOWAREHOUSE=Inget varuhus
+SPECIALCARGONOWAREHOUSE_DESC=Du har inget varuhus inom detta område!
+SPECIALCARGOMAXSELLPRICE_DESC=Ändrar försäljningspriset för speciallast till 6 miljoner dollar.
+OPENSCREEN=Öppna skärmen {1}
+OPENSCREEN_DESC=Öppnar skärmen {1}
+! {1} could be [TERRORBYTE] or [WAREHOUSE]
+SELLACRATE=Klicka för att sälja en speciell lastlåda
+SELLACRATE_DESC=Säljer en speciell lastlåda automatiskt
+
+NOTINSELECTEDWAREHOUSE_TOAST=Du är inte på ditt markerade lager!
+
+AUTOCOMPLETE=Autoslutför {1}
+AUTOCOMPLETE_DESC=Slutför {1} automatiskt
+! {1} could be [SELLMISSION] or [BUYMISSION]
+
+NCLIST_DESC=OBS: Maximalt försäljningsvärde är 4 miljoner USD. \n Försök INTE att "sälja allt"
+NCREVENUE=Fortjeneste
+NCREVENUE_DESC=Ändrar vinster på din nattklubb, oavsett popularitet.
+NCREVENUE_TOAST=Vinstuppsättning.
+
+NCMAXPOPULARITY=Max nattklubbs popularitet
+NCMAXPOPULARITY_DESC=Sätter din popularitet till 100 %
+NCMAXPOPULARITY_TOAST=Max popularitetsuppsättning.
+
+NCSAFELIST_DESC=
+
+NCSAFELOOP=AFK Money Loop
+NCSAFELOOP_DESC=Öppna ditt kassaskåp innan du slår på den här funktionen! \n Gir dig passivt ~ 300 000 $ var 4-5 sekund
+
+NCSAFELOOPDELAY=Loop Delay
+NCSAFELOOPDELAY_DESC=Ställer in hur länge loopen väntar innan nästa transaktion
+NCSAFELOOPDELAY_TOAST=Fördröjningen slutar.
+
+NCSAFELOOPTRANSACTIONTIMEOUT=Transaktions timeout
+NCSAFELOOPTRANSACTIONTIMEOUT_DESC=Anger hur länge en transaktion väntar innan den ger upp
+NCSAFELOOPTIMEOUTMODIFIED_TOAST=Transaktionstiden har ändrats.
+
+NCSAFELOOPSTOP=Stoppa loop efter $ x kvantitet
+NCSAFELOOPSTOP_DESC=Stoppar AFK-slingan efter att ha tjänat en viss summa
+NCSAFELOOPSTOP_TOAST=Kvantitetsuppsättning.
+
+NCRESETSAFEVALUE=Återställ säkert värde
+! Referenced in [NCSAFELOOPSAFEOVERLIMIT_TOAST]
+NCRESETSAFEVALUE_DESC=Om din nattklubb har> $ 300K eller $ 0> bör detta fixa det.
+NCRESETSAFEVALUEWAIT_TOAST=Vänta - ditt kassaskåp kommer att återställas.
+NCRESETSAFEVALUESUCCESS_TOAST=Ditt kassaskåp har nu återställts.
+NCRESETSAFEVALUESKIP_TOAST=Ditt kassaskåp verkar vara OK
+
+NCSAFELOOPMAXIMUMVALUEREACHED_TOAST=Maximalt värde har uppnåtts!
+NCSAFELOOPNOTINNIGHTCLUB_TOAST=Du verkar inte vara på din nattklubb. Vänligen stanna i den, med kassaskåpet öppet innan du slår på den här funktionen.
+NCSAFELOOPTIMEOUT_TOAST=Det verkar som att ni har träffats vid en transaktionstimeout.
+NCSAFELOOPSAFEOVERLIMIT_TOAST=Skåpet har överskridit gränsen. Använd "Återställ säkert värde" och försök igen
+! References [NCRESETSAFEVALUE]
+NCSAFELOOPSOMETHINGWENTWRONG_TOAST=Något gick fel ... om du kan återskapa denna händelse, vänligen rapportera det.
+
+MCLIST_DESC=OBS: Maximalt försäljningsvärde är 2,5 miljoner dollar
+
+BUNKERLIST_DESC=OBS: Maximalt försäljningsvärde är 2,7 miljoner dollar
+
+TELEPORTTO=Teleporter till {1}
+TELEPORTTO_DESC=Teleporterar dig till din utvalda {1}
+! {1} may be one of the following: [PROPERTY], [WAREHOUSE], [NIGHTCLUB], or [NIGHTCLUBSAFE]
+
+NOTINNIGHTCLUB_TOAST=Du är inte på din nattklubb!
+
+JOINDISCORD=Gå med i Discorden
+SHOWMOTD=Visar MOTD
+SHOWMOTDBLANK_TOAST=MOTD är tom.
+WARNINGRISKY_TOAST=VARNING: Alla funktioner i det här skriptet anses vara "riskiga"! Det finns en chans att bli avstängd inom ett visst antal dagar (förbud är slumpmässigt i tiden). Du har blivit varnad.

@@ -1,0 +1,192 @@
+@Author=August#4385
+@Version=0.3.0
+! Thank you for choosing to translate Musiness Banager into your language!
+! Please do not change anything before the "="!
+! Additions in the labels list will be marked with "+ " before the label, but without the quotes. You can search the file for "+ " every update to find the new labels!
+! Deletions in the labels list will be marked with "- " before the label. PLEASE DELETE THE ENTIRE LINE. The deletions are left in to help you understand if something was replaced!
+! For lines that begin with "+ ", remove the "+ ".
+! Lines with a "!" or "+" or "@" at the beginnning mark the line as a comment and that line will be ignored.
+! The labels that contain "{x}" where x is a number, indicate an additional piece of text. Do not add or remove or change the numbers inside of them.
+! You may however, move them around. For example if a line is "Press {1} to open {2}", you can move them around in any way you want such as "To open {2} press {1}".
+! It has been added to make it easier for languages that read right to left instead of the usual left to right.
+! One more thing: the two characters "\n" represents a new line. In game, there will be a new line where "\n" is.
+
+BUNKER=Bunker
+BUSINESS=Virksomhed
+MCBUSINESS=MC Virksomhed
+WAREHOUSE=Varehus
+NIGHTCLUB=Natklub
+NIGHTCLUBSAFE=Natklub pengeskab
+SPECIALCARGO=Special Last
+SELLMISSION=Salgsmission
+BUYMISSION=Købsmission
+START=Starte
+MONEY=Penge
+STOCK=Stock
+SUPPLIES=Forsyninger
+CRATES=Kasser
+PRODUCT=Produkt
+INFOOVERLAY=Informations overlay
+TERRORBYTE=Terrorbyte
+STOCK, SUPPLIES, PRODUCT should all be what the game calls it, or something equivalent
+! You might want to leave TERRORBYTE the same, unless the game calls it something different
+
+HTTPGIVEUP=Kunne ikke oprette forbindelse til serveren.
+HTTPINVALID=Modtog et ugyldigt svar fra serveren! Dette kan være på grund af Cloudflare eller antivirus der blokerer forbindelsen. Vær venlig at oprette en ny VPN forbindelse, og eller skift netværk.
+HTTPFAILSAFE=Aktiverer killswitches på grund af failsafe.
+SCRIPTOUTOFDATE=Scriptet er forældet! Vær venlig at genstarte scriptet for at få det seneste fra lageret (repository)!
+
+KILLSWITCH_SAFELOOP=Slår Natklub Afk Penge Loop fra på grund af killswitch
+! This was edited to be more clear
+KILLSWITCH_SPECIALCARGO=Slår Special Last fra på grund af killswitch
+KILLSWITCH_MAXSELLPRICE=Slår Maksimal salgs pris fra på grund af killswitch
+KILLSWITCH_AUTOCOMPLETE=Slår Automatisk fuldførelse fra på grund af killswitch
+
+TRANSACTIONSSTUCK_TOAST=Det ser ud til at dine transaktioner sidder fast. Vær venlig at skifte session eller genstarte spillet.
+BEALONE_TOAST=Der er for mange mennesker i din lobby! Advender bealone
+
+PREFIX_SAFELOOP=[Sikkert loop] {1}
+PREFIX_SPECIALCARGO=[Special Last] {1}
+PREFIX_TOTALEARNED=Tjent i alt: {1}
+PREFIX_MOTD=MOTD: {1}
+! {1} is a number, the amount of money earned in total.
+PREFIX={1} {2}
+! This can be '[x1] x2' where x1 is the prefix, and x2 is the message. This might go unused though..
+
+INFO_SCWAREHOUSE=SC Varehus {1}: {2}/{3}
+! {1} is slot {2} is amount {3} is capacity
+INFO_HUBBUSINESS=Hub {1}: {2}/{3}
+! {1} is name {2} is stock {3} is max capacity
+INFO_NCSAFE=Natklubs pengeskab $: {1}
+! {1} is value
+INFO_MCBUSINESS=MC {1}: {2}% | {3}/{4}
+! {1} is name {2} is supplies {3} is product {4} is capacity
+INFO_BUNKER=Bunker: {1}% | {2}/{3}
+! {1} is supplies {2} is product {3} is capacity
+
+FINDSAFERWAYS=Søg efter sikrere måder at tjene penge på
+FINDSAFERWAYS_DESC=Vær venlig i det mindste at læse dette før du fortsætter med pengemulighederne nedenfor
+RETREIVINGINFO=Henter oplysninger...
+
+SALESABUSE_DIVIDER=Salgs udnyttelse
+
+MAXSELLPRICE=Maksimal salgs pris
+MAXSELLPRICE_DESC=Sælg dit {1} for den maksimalt mulige pris ligemeget hvor meget {2} du har
+! {1} and {2} are the same, and may be one of the following: [STOCK], [SUPPLIES], or [PRODUCT]
+
+MONITOR=Monitor
+
+MONITOR_EXTRA=Overvåger {1}
+MONITOR_DESC=Viser dig hvor meget {1} du har i din {2}, ved hjælp af {3}
+! {1} could be [STOCK], [SUPPLIES], [PRODUCT], or [MONEY] {2} could be [NIGHTCLUBSAFE], [BUSINESS], or [WAREHOUSE]. {3} is [INFOOVERLAY] for now, but could be changed in the future.
+
+BYPASSCOOLDOWN=Omgå {1} Ventetid
+! {1} may be one of the following: [SELLMISSION], [BUYMISSION]
+BYPASSCOOLDOWN_DESC=Lader dig {1} endnu en {2} uden at skulle vente.
+! {1} is [START] for now, and {2} could be [SELLMISSION] or [BUYMISSION] for now.
+
+SETPRODUCT=Definer produkt mængde
+SETPRODUCT_DESC=Vælg hvor meget produkt du har direkte
+SETPRODUCT_TOAST=Produkt mængde defineret.
+
+MAXPRODUCTALL=Maksimal mængde af alle produkter
+MAXPRODUCTALL_DESC=Indstiller antallet af alle produkter til deres maksimale mængde
+MAXPRODUCTALL_TOAST=Alle produkt mængder er maksimeret.
+
+MAXPRODUCTIONSPEED=Maksimal produktions hastighed
+MCMAXPRODUCTIONSPEED_DESC=Træder i kraft med det samme
+NCMAXPRODUCTIONSPEED_DESC=Træder i kraft efter en enhed er færdig med at producere
+MAXPRODUCTIONSPEED_TOAST=Produktions hastigheden er maksimeret.
+MAXPRODUCTIONSPEEDSLOW_TOAST=Produktions hastigheden er maksimeret. Dette træder i kraft når en vare er blevet produceret.
+
+MAXIMUMCAPACITY=Maksimal kapacitet
+MAXIMUMCAPACITY_DESC=Påvirker hvor meget du potentielt kan holde på dit lager
+MAXIMUMCAPACITY_TOAST=Kapacitet ændret.
+
+SUPPLYPRODUCTRATIO=Supply->Produkt forhold
+SUPPLYPRODUCTRATIO_DESC=Definerer hvor meget forsyning det vil tage at lave et produkt. Lavere værdier er bedere effektivitet
+SUPPLYPRODUCTRATIO_TOAST=Forhold ændret.
+
+RESUPPLY=Genforsyn
+RESUPPLY_DESC=Leverer øjeblikkeligt forsyninger til din virksomhed helt gratis
+
+TRIGGERPRODUCTION=Start produktion
+TRIGGERPRODUCTION_DESC=Starter produktion øjeblikkeligt
+TRIGGERPRODUCTION_TOAST=Produktion startet.
+
+ENFORCEEASIESTMISSION=Gennemtving den nemmeste salgsmission
+ENFORCEEASIESTMISSION_DESC=Dette sikrer at du altid får den nemmeste og hurtigste salgsmission, men hvis du er for hurtig bliver du måske ikke betalt?
+
+SPECIALCARGOLIST_DESC=Bemærk at den maksimale salgsværdi er $6m
+
+SPECIALCARGOWAREHOUSE_DESC=Vælg hvilket varehus du vil overvåge og ændre da du kan eje fem af dem.
+SPECIALCARGOMONITOR_DESC=Viser hvor mange special last kasser du har i det valgte varehus
+SPECIALCARGONOWAREHOUSE=Intet varehus
+SPECIALCARGONOWAREHOUSE_DESC=Du har ikke noget varehus på denne plads!
+SPECIALCARGOMAXSELLPRICE_DESC=Ændrer salgsprisen af dit CEO's special last kasser til $6m. Hold denne aktiveret for at sikre korrekt matematik på fremtidige salg
+OPENSCREEN=Åben {1} Skærmen
+OPENSCREEN_DESC=Åbner {1} skærmen
+! {1} could be [TERRORBYTE] or [WAREHOUSE]
+SELLACRATE=Tryk for at sælge en kasse
+SELLACRATE_DESC=Sælger automatisk en special last kasse
+
+NOTINSELECTEDWAREHOUSE_TOAST=Du er ikke i det valgte varehus!
+
+AUTOCOMPLETE=Klar {1} automatisk
+AUTOCOMPLETE_DESC=Klarer automatisk {1}
+! {1} could be [SELLMISSION] or [BUYMISSION]
+
+NCLIST_DESC=Bemærk at den maksimale salgs værdi er $4m.\nForsøg ikke at bruge 'sælge alt' ved nightclub computeren
+NCREVENUE=Indtægt
+NCREVENUE_DESC=Ændrer hvor meget indtægt din natklub får uanset hvor populær du er
+NCREVENUE_TOAST=Indtægt ændret.
+
+NCMAXPOPULARITY=Maksimerer Natklub Popularitet
+NCMAXPOPULARITY_DESC=Ændrer din Natklubs popularitet til 100%
+NCMAXPOPULARITY_TOAST=Natklub popularitet Blev Maksimeret.
+
+NCSAFELIST_DESC=
+
+NCSAFELOOP=AFK Penge Loop
+NCSAFELOOP_DESC=Åben din natklubs pengeskab inden du bruger denne funktion!\nTjener dig $300k hver ~4-5 sekunder
+
+NCSAFELOOPDELAY=Loop Forsinkelse
+NCSAFELOOPDELAY_DESC=Ændrer hvor lang tid afk loopet venter (i millisekunder) mellem store skridt
+NCSAFELOOPDELAY_TOAST=Forsinkelse ændret.
+
+NCSAFELOOPTRANSACTIONTIMEOUT=Timeout for transaktioner
+NCSAFELOOPTRANSACTIONTIMEOUT_DESC=Ændrer hvor lang tid der ventes på at en transaktion fuldføres før der gives op
+NCSAFELOOPTIMEOUTMODIFIED_TOAST=Timeout for transaktioner ændret.
+
+NCSAFELOOPSTOP=Stop Loopet Efter Du Har Tjent $x Mængde
+NCSAFELOOPSTOP_DESC=Stopper Afk Penge Loopet efter du har tjent den valgte mængde
+NCSAFELOOPSTOP_TOAST=Grænse ændret.
+
+NCRESETSAFEVALUE=Nulstil Penge I Pengeskabet
+! Referenced in [NCSAFELOOPSAFEOVERLIMIT_TOAST]
+NCRESETSAFEVALUE_DESC=Hvis din natklub's pengeskab har mere end $300k eller mindre end $0 så burde det her fixe det.
+NCRESETSAFEVALUEWAIT_TOAST=Vent venligst mens din natklubs pengeskab nulstilles.
+NCRESETSAFEVALUESUCCESS_TOAST=Din natklubs pengeskab skulle gerne være nulstillet nu.
+NCRESETSAFEVALUESKIP_TOAST=Din natklubs pengeskab ser ud til at være fin
+
+NCSAFELOOPMAXIMUMVALUEREACHED_TOAST=Maksimal Værdi Opnået!
+NCSAFELOOPNOTINNIGHTCLUB_TOAST=Du ser ikke ud til at være i din natklub. Vær sikker på du er i din natklub med pengeskabet åbent før du bruger denne funktion!
+NCSAFELOOPTIMEOUT_TOAST=Det ser ud til at du har ramt transaktions timeouten.
+NCSAFELOOPSAFEOVERLIMIT_TOAST=Uh oh, det ser ud til at dit pengeskab kom over grænsen. Brug [Nulstil Penge I Pengeskabet] og prøv igen
+! References [NCRESETSAFEVALUE]
+NCSAFELOOPSOMETHINGWENTWRONG_TOAST=Noget gik galt... Hvis du kan genskabe denne fejl bedes du rapportere det..
+
+MCLIST_DESC=Bemærk at den maksimale salgsværdi er $2,5m
+
+BUNKERLIST_DESC=Bemærk at den maksimale salgs værdi er $2,7m
+
+TELEPORTTO=Teleporter til {1}
+TELEPORTTO_DESC=Teleporterer dig til din {1}
+! {1} may be one of the following: [PROPERTY], [WAREHOUSE], [NIGHTCLUB], or [NIGHTCLUBSAFE]
+
+NOTINNIGHTCLUB_TOAST=Du er ikke i din natklub!
+
+JOINDISCORD=Kom med i discorden
+SHOWMOTD=Vis MOTD (Dagens besked)
+SHOWMOTDBLANK_TOAST=Dagens besked er blank.
+WARNINGRISKY_TOAST=ADVARSEL: Alle funktioner i dette script betragtes som risikable! Der er en chance for at du bliver bannet indenfor en ukendt mængde dage (bans er forsinket med tilfældige mængder af tid). Du er advaret.
